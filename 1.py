@@ -4,9 +4,6 @@ students = [
     {'id': 3, 'full_name': 'Винговатов Александр Олегович'}
 ]
 
-full_names = [student['full_name'] for student in students]
-split_names = [name.split() for name in full_names]
-fio_list = [' '.join(split_name) for split_name in split_names]
+fio_list = [student['full_name'] for student in students]
 
-result = ',\n'.join(fio_list)
-print(result)
+print(f'[{",\n".join(fio_list)}]')
