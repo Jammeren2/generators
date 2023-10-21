@@ -6,4 +6,4 @@ students = [
 
 fio_list = [student['full_name'] for student in students]
 
-print(f'[{",\n".join(fio_list)}]')
+print(fio_list)
